@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "question": "Which atom has the greatest number of unpaired electrons?",
+    "options": ["P", "V", "Fe", "Cu"],
+    "correctAnswer": "Fe",
+    "topic": "Life lessons"
+  },
+  {
+    "id": 2,
+    "question": "Samples of four different substances are analysed using time of flight mass spectrometry. In each case, the samples are ionised to form ions with a single positive charge. The ions are accelerated to the same kinetic energy. Which sample gives ions with the shortest time of flight?",
+    "options": ["A sample of ⁴⁵Sc that is ionised using electron impact ionisation.", "A sample of C₃H₈ that is ionised using electrospray ionisation.", "A sample of CH₃CH₂OH that is ionised using electrospray ionisation.", "A sample of CO₂ that is ionised using electron impact ionisation."],
+    "correctAnswer": "A sample of CO₂ that is ionised using electron impact ionisation.",
+    "topic": "Truth"
+  }
+]
