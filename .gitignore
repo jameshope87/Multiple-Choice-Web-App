@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 serviceAccountKey.json
-firebase.js
+\src\firebase.js
