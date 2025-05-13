@@ -1,4 +1,4 @@
-import { useState, useEffect, Fragment } from 'react';
+import { useState, useEffect, Fragment, Children } from 'react';
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 import ReactMarkdown from 'react-markdown';
@@ -16,22 +16,38 @@ function shuffleArray(array) {
   }
   return arr;
 }
-/*
+
 const MarkdownComponents = {
-  p: ({ node, ...props}) => {
-    const isEquation = /[+=→]/.test(props.children.join(""));
+  p: ({ children}) => {
+    const childrenArray = Children.toArray(children);
+    const text = childrenArray
+      .map((child) => (typeof child === "string" ? child : ""))
+      .join("")
+      .trim();
+    const lines = text.split("\n");
+
     return (
-      <p
-        className={`my-2 ${
-          isEquation ? "whitespace-nowrap overflow-x-auto text-sm font-mono" : ""
-        }`}
-      >
-        {props.children}
-      </p>
+      <>
+      {lines.map((line, index) => {
+        const isEquation = /[→↔⇌Δ⟶]/.test(line.trim()); // looks for symbols common in chemical equations
+        return (
+          <p
+            key={index}
+            className= {
+              isEquation 
+              ? "whitespace-nowrap overflow-x-auto text-sm font-mono" 
+              : ""
+            }
+          >
+            {line}
+          </p>
+        );
+      })}
+      </>
     );
-  }
+  },
 };
-*/
+
 function App() {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -92,13 +108,15 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 p-4 flex flex-col items-center justify-center dark:bg-gray-400">
       <div className="bg-white p-6 rounded-xl shadow-lg w-full max-w-xl dark:bg-gray-600">
-        <h2 className="text-xl font-bold mb-4">
+        <h2 className="text-xl font-bold mb-4 text-left">
           <div className="prose prose-sm max-w-none">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}
-            children={currentQuestion.question}
-          />
+            components={MarkdownComponents}
+          >
+            {currentQuestion.question}
+          </ReactMarkdown>
           </div>
           {//Live rendering of Questions
           /*

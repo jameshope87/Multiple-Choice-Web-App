@@ -60,7 +60,7 @@
     "id": "Chem313-w9t6"
   },
   {
-    "question": "The table shows some results from a titration. Titration:  \n  \n| | Rough | Titre 1 | Titre 2 | Titre 3|  \n|----------------------|-------|---------|---------|---------|  \nInitial reading / cm³ | 0.00  |  11.30  |  0.00   |  8.55 |  \nFinal reading / cm³   | 26.85 |  37.20  |  26.20  |  34.55 |  \nTitre volume / cm³    | 26.85 |  25.90  |  26.20  |  26.00 |  \n  \nWhat is the correct mean titre?",
+    "question": "The table shows some results from a titration. Titration:  \n  \n| | Rough | Titre 1 | Titre 2 | Titre 3|  \n|----------------------|-------|---------|---------|---------|  \n|Initial reading / cm³ | 0.00  |  11.30  |  0.00   |  8.55 |  \n|Final reading / cm³   | 26.85 |  37.20  |  26.20  |  34.55 |  \n|Titre volume / cm³    | 26.85 |  25.90  |  26.20  |  26.00 |  \n  \nWhat is the correct mean titre?",
     "options": [
       "25.95 cm³",
       "26.03 cm³",
@@ -84,11 +84,11 @@
     "id": "Chem313-6xm6"
   },
   {
-    "question": "Values of the ionic product of water (Kᵥ) at different temperatures are given.  \nKᵥ = 6.40 × 10⁻¹⁵ mol² dm⁻⁶ at 18 °C  \nKᵥ = 1.00 × 10⁻¹⁴ mol² dm⁻⁶ at 25 °C  \nWhich statement is correct?",
+    "question": "Values of the ionic product of water (Kᵥ) at different temperatures are given.  \nKᵥ = 6.40 × 10⁻¹⁵ mol² dm⁻⁶ at 18°C  \nKᵥ = 1.00 × 10⁻¹⁴ mol² dm⁻⁶ at 25°C  \nWhich statement is correct?",
     "options": [
-      "The concentration of hydroxide ions in water at 18 °C is 8.00 × 10⁻⁸ mol dm⁻³",
+      "The concentration of hydroxide ions in water at 18°C is 8.00 × 10⁻⁸ mol dm⁻³",
       "The dissociation of water into ions is an exothermic process.",
-      "The pH of water is the same at 25 °C and at 18 °C",
+      "The pH of water is the same at 25°C and at 18°C",
       "Water becomes less acidic as the temperature is raised."
     ],
     "correctAnswer": "The dissociation of water into ions is an exothermic process.",
@@ -120,7 +120,7 @@
     "id": "Chem315-9kgc"
   },
   {
-    "question": "Which statement about the industrial production of ethanol from ethene at 300 °C is correct?  \nC₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)  ΔH = –46 kJ mol⁻¹",
+    "question": "Which statement about the industrial production of ethanol from ethene at 300°C is correct?  \nC₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)  ΔH = –46 kJ mol⁻¹",
     "options": [
       "An increase in pressure decreases the equilibrium yield of ethanol.",
       "An increase in pressure increases the value of Kc",
@@ -144,7 +144,7 @@
     "id": "Chem318-fojf"
   },
   {
-    "question": "The results of an investigation of the reaction between P and Q are shown in this table.  \nExperiment | Initial [P] / mol dm⁻³ | Initial [Q] / mol dm⁻³ | Initial rate / mol dm⁻³ s⁻¹  \n1 | 0.200 | 0.500 | 0.400  \n2 | 0.600 | To be calculated | 0.800  \nThe rate equation is: rate = k [P] [Q]²  \nWhat is the initial concentration of Q in experiment 2?",
+    "question": "The results of an investigation of the reaction between P and Q are shown in this table.  \n| Experiment | Initial [P] / mol dm⁻³ | Initial [Q] / mol dm⁻³ | Initial rate / mol dm⁻³ s⁻¹|  \n|------------|------------------------|------------------------|----------------------------|  \n|1 | 0.200 | 0.500 | 0.400  \n|2 | 0.600 | To be calculated | 0.800 |  \n  \nThe rate equation is: rate = k [P] [Q]²  \nWhat is the initial concentration of Q in experiment 2?",
     "options": [
       "0.167",
       "0.333",
