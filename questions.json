@@ -1,16 +1,182 @@
 [
   {
-    "id": 1,
     "question": "Which atom has the greatest number of unpaired electrons?",
-    "options": ["P", "V", "Fe", "Cu"],
+    "options": [
+      "P",
+      "V",
+      "Fe",
+      "Cu"
+    ],
     "correctAnswer": "Fe",
-    "topic": "Life lessons"
+    "topic": "Chem311",
+    "id": "Chem311-zue8"
   },
   {
-    "id": 2,
     "question": "Samples of four different substances are analysed using time of flight mass spectrometry. In each case, the samples are ionised to form ions with a single positive charge. The ions are accelerated to the same kinetic energy. Which sample gives ions with the shortest time of flight?",
-    "options": ["A sample of ⁴⁵Sc that is ionised using electron impact ionisation.", "A sample of C₃H₈ that is ionised using electrospray ionisation.", "A sample of CH₃CH₂OH that is ionised using electrospray ionisation.", "A sample of CO₂ that is ionised using electron impact ionisation."],
+    "options": [
+      "A sample of ^45Sc that is ionised using electron impact ionisation.",
+      "A sample of C₃H₈ that is ionised using electrospray ionisation.",
+      "A sample of CH₃CH₂OH that is ionised using electrospray ionisation.",
+      "A sample of CO₂ that is ionised using electron impact ionisation."
+    ],
     "correctAnswer": "A sample of CO₂ that is ionised using electron impact ionisation.",
-    "topic": "Truth"
+    "topic": "Chem311",
+    "id": "Chem311-xeg9"
+  },
+  {
+    "question": "Which element has the highest third ionisation energy?",
+    "options": [
+      "Li",
+      "Be",
+      "K",
+      "Ca"
+    ],
+    "correctAnswer": "Be",
+    "topic": "Chem311",
+    "id": "Chem311-ipee"
+  },
+  {
+    "question": "What is the percentage atom economy for the formation of sodium nitrate in the reaction between sodium carbonate and nitric acid?  \nNa₂CO₃ + 2 HNO₃ → 2 NaNO₃ + H₂O + CO₂",
+    "options": [
+      "36.6%",
+      "50.3%",
+      "57.8%",
+      "73.3%"
+    ],
+    "correctAnswer": "73.3%",
+    "topic": "Chem312",
+    "id": "Chem312-0r8z"
+  },
+  {
+    "question": "Which involves the formation of a dative covalent bond?",
+    "options": [
+      "PCl₃ + Cl₂ → PCl₅",
+      "Na⁺ + H⁻ → NaH",
+      "Mg + Cl₂ → MgCl₂",
+      "BH₃ + H⁻ → BH₄⁻"
+    ],
+    "correctAnswer": "BH₃ + H⁻ → BH₄⁻",
+    "topic": "Chem313",
+    "id": "Chem313-w9t6"
+  },
+  {
+    "question": "The table shows some results from a titration. Titration:  \n  \n| | Rough | Titre 1 | Titre 2 | Titre 3|  \n|----------------------|-------|---------|---------|---------|  \nInitial reading / cm³ | 0.00  |  11.30  |  0.00   |  8.55 |  \nFinal reading / cm³   | 26.85 |  37.20  |  26.20  |  34.55 |  \nTitre volume / cm³    | 26.85 |  25.90  |  26.20  |  26.00 |  \n  \nWhat is the correct mean titre?",
+    "options": [
+      "25.95 cm³",
+      "26.03 cm³",
+      "26.10 cm³",
+      "26.24 cm³"
+    ],
+    "correctAnswer": "26.03 cm³",
+    "topic": "Chem312",
+    "id": "Chem312-3300"
+  },
+  {
+    "question": "Which element has the lowest melting point?",
+    "options": [
+      "Na",
+      "Mg",
+      "K",
+      "Ca"
+    ],
+    "correctAnswer": "K",
+    "topic": "Chem313",
+    "id": "Chem313-6xm6"
+  },
+  {
+    "question": "Values of the ionic product of water (Kᵥ) at different temperatures are given.  \nKᵥ = 6.40 × 10⁻¹⁵ mol² dm⁻⁶ at 18 °C  \nKᵥ = 1.00 × 10⁻¹⁴ mol² dm⁻⁶ at 25 °C  \nWhich statement is correct?",
+    "options": [
+      "The concentration of hydroxide ions in water at 18 °C is 8.00 × 10⁻⁸ mol dm⁻³",
+      "The dissociation of water into ions is an exothermic process.",
+      "The pH of water is the same at 25 °C and at 18 °C",
+      "Water becomes less acidic as the temperature is raised."
+    ],
+    "correctAnswer": "The dissociation of water into ions is an exothermic process.",
+    "topic": "Chem3112",
+    "id": "Chem3112-ooig"
+  },
+  {
+    "question": "Use this information to answer the question below:  \nC(s) + O₂(g) → CO₂(g) ΔH = −393.5 kJ mol⁻¹  \nH₂(g) + ½ O₂(g) → H₂O(l) ΔH = −285.8 kJ mol⁻¹  \n3 C(s) + 4 H₂(g) → C₃H₈(g) ΔH = −104.0 kJ mol⁻¹  \n4 C(s) + 5 H₂(g) → C₄H₁₀(g) ΔH = −125.2 kJ mol⁻¹  \nWhat is the enthalpy of combustion, in kJ mol⁻¹, of propane?",
+    "options": [
+      "−211.7",
+      "−419.7",
+      "−2220",
+      "−2878"
+    ],
+    "correctAnswer": "−2220",
+    "topic": "Chem314",
+    "id": "Chem314-5wev"
+  },
+  {
+    "question": "Which statement explains why the rate of a reaction increases when a catalyst is added to a reaction mixture at a constant temperature?",
+    "options": [
+      "The collision frequency increases because there is an increase in the activation energy.",
+      "The collision frequency increases because there is an increase in the mean energy of the particles.",
+      "The proportion of successful collisions increases because there is a decrease in the activation energy.",
+      "The proportion of successful collisions increases because there is an increase in the mean energy of the particles."
+    ],
+    "correctAnswer": "The proportion of successful collisions increases because there is a decrease in the activation energy.",
+    "topic": "Chem315",
+    "id": "Chem315-9kgc"
+  },
+  {
+    "question": "Which statement about the industrial production of ethanol from ethene at 300 °C is correct?  \nC₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)  ΔH = –46 kJ mol⁻¹",
+    "options": [
+      "An increase in pressure decreases the equilibrium yield of ethanol.",
+      "An increase in pressure increases the value of Kc",
+      "An increase in temperature increases the equilibrium yield of ethanol.",
+      "An increase in temperature decreases the value of Kc"
+    ],
+    "correctAnswer": "An increase in temperature decreases the value of Kc",
+    "topic": "Chem316",
+    "id": "Chem316-wu6j"
+  },
+  {
+    "question": "Which equation represents the process that occurs when the standard enthalpy of atomisation of iodine is measured?",
+    "options": [
+      "½I₂(s) → I(g)",
+      "I₂(s) → 2I(g)",
+      "½I₂(g) → I(g)",
+      "I₂(g) → 2I(g)"
+    ],
+    "correctAnswer": "½I₂(s) → I(g)",
+    "topic": "Chem318",
+    "id": "Chem318-fojf"
+  },
+  {
+    "question": "The results of an investigation of the reaction between P and Q are shown in this table.  \nExperiment | Initial [P] / mol dm⁻³ | Initial [Q] / mol dm⁻³ | Initial rate / mol dm⁻³ s⁻¹  \n1 | 0.200 | 0.500 | 0.400  \n2 | 0.600 | To be calculated | 0.800  \nThe rate equation is: rate = k [P] [Q]²  \nWhat is the initial concentration of Q in experiment 2?",
+    "options": [
+      "0.167",
+      "0.333",
+      "0.408",
+      "0.612"
+    ],
+    "correctAnswer": "0.408",
+    "topic": "Chem319",
+    "id": "Chem319-7aav"
+  },
+  {
+    "question": "A cell with EMF = +2.15 V is made from two electrodes.  \nThe half-equations for the two electrodes are shown.  \nPositive electrode:  \nPbO₂(s) + 3 H⁺(aq) + HSO₄⁻(aq) + 2 e⁻ ⟶ PbSO₄(s) + 2 H₂O(l)  \nNegative electrode:  \nPbSO₄(s) + H⁺(aq) + 2 e⁻ ⟶ Pb(s) + HSO₄⁻(aq)  E⁰ = –0.46 V  \nWhat is the standard electrode potential of the PbO₂ / PbSO₄ electrode?",
+    "options": [
+      "–2.61 V",
+      "–1.69 V",
+      "+1.69 V",
+      "+2.61 V"
+    ],
+    "correctAnswer": "+1.69 V",
+    "topic": "Chem3111",
+    "id": "Chem3111-3ja2"
+  },
+  {
+    "question": "The equation for the complete combustion of butane is:  \nC₄H₁₀ + 6.5 O₂ → 4 CO₂ + 5 H₂O  \nWhat is the mole fraction of butane in a mixture of butane and oxygen with the minimum amount of oxygen needed for complete combustion?",
+    "options": [
+      "0.133",
+      "0.153",
+      "0.167",
+      "0.200"
+    ],
+    "correctAnswer": "0.133",
+    "topic": "Chem3110",
+    "id": "Chem3110-pvb0"
   }
 ]

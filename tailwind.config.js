@@ -8,6 +8,6 @@ export default {
     extend: {},
   },
   //darkMode: 'class', // Enable dark mode via class
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
 

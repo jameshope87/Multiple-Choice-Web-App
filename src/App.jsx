@@ -1,10 +1,37 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+//import reactLogo from './assets/react.svg'
+//import viteLogo from '/vite.svg'
 import './App.css'
 
+function shuffleArray(array) {
+  const arr = [...array]; // Make a copy so we don't mutate original
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+/*
+const MarkdownComponents = {
+  p: ({ node, ...props}) => {
+    const isEquation = /[+=→]/.test(props.children.join(""));
+    return (
+      <p
+        className={`my-2 ${
+          isEquation ? "whitespace-nowrap overflow-x-auto text-sm font-mono" : ""
+        }`}
+      >
+        {props.children}
+      </p>
+    );
+  }
+};
+*/
 function App() {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,7 +45,8 @@ function App() {
     const fetchQuestions = async () => {
       const querySnapshot = await getDocs(collection(db, "questions"));
       const loadedQuestions = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data() }));
-      setQuestions(loadedQuestions);
+      const randomTen = shuffleArray(loadedQuestions).slice(0,10);
+      setQuestions(randomTen);
       setLoading(false);
     };
     fetchQuestions();
@@ -64,7 +92,39 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 p-4 flex flex-col items-center justify-center dark:bg-gray-400">
       <div className="bg-white p-6 rounded-xl shadow-lg w-full max-w-xl dark:bg-gray-600">
-        <h2 className="text-xl font-bold mb-4">{currentQuestion.question}</h2>
+        <h2 className="text-xl font-bold mb-4">
+          <div className="prose prose-sm max-w-none">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+            children={currentQuestion.question}
+          />
+          </div>
+          {//Live rendering of Questions
+          /*
+          {currentQuestion.question.split('\n').map((line,i) => {
+            const isEquation = line.includes('->') || line.includes('+') || line.includes('Δ');
+            return (
+            <div
+              key={i}
+              className={`${
+                isEquation
+                  ? "whitespace-nowrap text-base md:text-lg overflow-auto"
+                  : "whitespace-normal"
+              }
+              ${
+                isTable
+                ? "font-mono text-sm"
+                : ""
+              }`}
+            >
+              {line}
+              <br />
+            </div>
+            );
+         })}
+         */}
+        </h2>
         <div className="space-y-2">
           {currentQuestion.options.map((option) => (
             <button
