@@ -14,12 +14,12 @@
   {
     "question": "Samples of four different substances are analysed using time of flight mass spectrometry. In each case, the samples are ionised to form ions with a single positive charge. The ions are accelerated to the same kinetic energy. Which sample gives ions with the shortest time of flight?",
     "options": [
-      "A sample of ^45Sc that is ionised using electron impact ionisation.",
-      "A sample of C₃H₈ that is ionised using electrospray ionisation.",
-      "A sample of CH₃CH₂OH that is ionised using electrospray ionisation.",
-      "A sample of CO₂ that is ionised using electron impact ionisation."
+      "A sample of ^45^Sc that is ionised using electron impact ionisation.",
+      "A sample of C~3~H~8~ that is ionised using electrospray ionisation.",
+      "A sample of CH~3~CH~2~OH that is ionised using electrospray ionisation.",
+      "A sample of CO~2~ that is ionised using electron impact ionisation."
     ],
-    "correctAnswer": "A sample of CO₂ that is ionised using electron impact ionisation.",
+    "correctAnswer": "A sample of CO~2~ that is ionised using electron impact ionisation.",
     "topic": "Chem311",
     "id": "Chem311-xeg9"
   },
@@ -36,7 +36,7 @@
     "id": "Chem311-ipee"
   },
   {
-    "question": "What is the percentage atom economy for the formation of sodium nitrate in the reaction between sodium carbonate and nitric acid?  \nNa₂CO₃ + 2 HNO₃ → 2 NaNO₃ + H₂O + CO₂",
+    "question": "What is the percentage atom economy for the formation of sodium nitrate in the reaction between sodium carbonate and nitric acid?  \n\nNa~2~CO~3~ + 2 HNO~3~ &rarr; 2 NaNO~3~ + H~2~O + CO~2~",
     "options": [
       "36.6%",
       "50.3%",
@@ -50,24 +50,24 @@
   {
     "question": "Which involves the formation of a dative covalent bond?",
     "options": [
-      "PCl₃ + Cl₂ → PCl₅",
-      "Na⁺ + H⁻ → NaH",
-      "Mg + Cl₂ → MgCl₂",
-      "BH₃ + H⁻ → BH₄⁻"
+      "PCl~3~ + Cl~2~ &rarr; PCl~5~",
+      "Na^+^ + H^-^ &rarr; NaH",
+      "Mg + Cl~2~ &rarr; MgCl~2~",
+      "BH~3~ + H^-^ &rarr; BH~4~^-^"
     ],
-    "correctAnswer": "BH₃ + H⁻ → BH₄⁻",
+    "correctAnswer": "BH~3~ + H^-^ &rarr; BH~4~^-^",
     "topic": "Chem313",
     "id": "Chem313-w9t6"
   },
   {
-    "question": "The table shows some results from a titration. Titration:  \n  \n| | Rough | Titre 1 | Titre 2 | Titre 3|  \n|----------------------|-------|---------|---------|---------|  \n|Initial reading / cm³ | 0.00  |  11.30  |  0.00   |  8.55 |  \n|Final reading / cm³   | 26.85 |  37.20  |  26.20  |  34.55 |  \n|Titre volume / cm³    | 26.85 |  25.90  |  26.20  |  26.00 |  \n  \nWhat is the correct mean titre?",
+    "question": "The table shows some results from a titration. Titration:  \n  \n| | Rough | Titre 1 | Titre 2 | Titre 3|  \n|----------------------|-------|---------|---------|---------|  \n|Initial reading / cm^3^ | 0.00  |  11.30  |  0.00   |  8.55 |  \n|Final reading / cm^3^   | 26.85 |  37.20  |  26.20  |  34.55 |  \n|Titre volume / cm^3^    | 26.85 |  25.90  |  26.20  |  26.00 |  \n  \nWhat is the correct mean titre?",
     "options": [
-      "25.95 cm³",
-      "26.03 cm³",
-      "26.10 cm³",
-      "26.24 cm³"
+      "25.95 cm^3^",
+      "26.03 cm^3^",
+      "26.10 cm^3^",
+      "26.24 cm^3^"
     ],
-    "correctAnswer": "26.03 cm³",
+    "correctAnswer": "26.03 cm^3^",
     "topic": "Chem312",
     "id": "Chem312-3300"
   },
@@ -84,11 +84,11 @@
     "id": "Chem313-6xm6"
   },
   {
-    "question": "Values of the ionic product of water (Kᵥ) at different temperatures are given.  \nKᵥ = 6.40 × 10⁻¹⁵ mol² dm⁻⁶ at 18°C  \nKᵥ = 1.00 × 10⁻¹⁴ mol² dm⁻⁶ at 25°C  \nWhich statement is correct?",
+    "question": "Values of the ionic product of water (K~w~) at different temperatures are given.  \nK~w~ = 6.40 &times; 10^-15^ mol^2^ dm^-6^ at 18&deg;C  \nK~w~ = 1.00 &times; 10^-14^ mol^2^ dm^-6^ at 25&deg;C  \n\nWhich statement is correct?",
     "options": [
-      "The concentration of hydroxide ions in water at 18°C is 8.00 × 10⁻⁸ mol dm⁻³",
+      "The concentration of hydroxide ions in water at 18&deg;C is 8.00 &times; 10^-8^ mol dm^-3^",
       "The dissociation of water into ions is an exothermic process.",
-      "The pH of water is the same at 25°C and at 18°C",
+      "The pH of water is the same at 25&deg;C and at 18&deg;C",
       "Water becomes less acidic as the temperature is raised."
     ],
     "correctAnswer": "The dissociation of water into ions is an exothermic process.",
@@ -96,7 +96,7 @@
     "id": "Chem3112-ooig"
   },
   {
-    "question": "Use this information to answer the question below:  \nC(s) + O₂(g) → CO₂(g) ΔH = −393.5 kJ mol⁻¹  \nH₂(g) + ½ O₂(g) → H₂O(l) ΔH = −285.8 kJ mol⁻¹  \n3 C(s) + 4 H₂(g) → C₃H₈(g) ΔH = −104.0 kJ mol⁻¹  \n4 C(s) + 5 H₂(g) → C₄H₁₀(g) ΔH = −125.2 kJ mol⁻¹  \nWhat is the enthalpy of combustion, in kJ mol⁻¹, of propane?",
+    "question": "Use this information to answer the question below:  \n\nC(s) + O~2~(g) &rarr; CO~2~(g) &Delta;H = −393.5 kJ mol^-1^  \n\nH~2~(g) + &frac12; O~2~(g) &rarr; H~2~O(l) &Delta;H = −285.8 kJ mol^-1^  \n\n3 C(s) + 4 H~2~(g) &rarr; C~3~H~8~(g) &Delta;H = −104.0 kJ mol^-1^  \n\n4 C(s) + 5 H~2~(g) &rarr; C~4~H~10~(g) &Delta;H = −125.2 kJ mol^-1^  \n\nWhat is the enthalpy of combustion, in kJ mol^-1^, of propane?",
     "options": [
       "−211.7",
       "−419.7",
@@ -120,7 +120,7 @@
     "id": "Chem315-9kgc"
   },
   {
-    "question": "Which statement about the industrial production of ethanol from ethene at 300°C is correct?  \nC₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)  ΔH = –46 kJ mol⁻¹",
+    "question": "Which statement about the industrial production of ethanol from ethene at 300&deg;C is correct?  \n\nC~2~H~4~(g) + H~2~O(g) &#8652; C~2~H~5~OH(g)  &Delta;H = –46 kJ mol^-1^",
     "options": [
       "An increase in pressure decreases the equilibrium yield of ethanol.",
       "An increase in pressure increases the value of Kc",
@@ -134,17 +134,17 @@
   {
     "question": "Which equation represents the process that occurs when the standard enthalpy of atomisation of iodine is measured?",
     "options": [
-      "½I₂(s) → I(g)",
-      "I₂(s) → 2I(g)",
-      "½I₂(g) → I(g)",
-      "I₂(g) → 2I(g)"
+      "&frac12;I~2~(s) &rarr; I(g)",
+      "I~2~(s) &rarr; 2I(g)",
+      "&frac12;I~2~(g) &rarr; I(g)",
+      "I~2~(g) &rarr; 2I(g)"
     ],
-    "correctAnswer": "½I₂(s) → I(g)",
+    "correctAnswer": "&frac12;I~2~(s) &rarr; I(g)",
     "topic": "Chem318",
     "id": "Chem318-fojf"
   },
   {
-    "question": "The results of an investigation of the reaction between P and Q are shown in this table.  \n| Experiment | Initial [P] / mol dm⁻³ | Initial [Q] / mol dm⁻³ | Initial rate / mol dm⁻³ s⁻¹|  \n|------------|------------------------|------------------------|----------------------------|  \n|1 | 0.200 | 0.500 | 0.400  \n|2 | 0.600 | To be calculated | 0.800 |  \n  \nThe rate equation is: rate = k [P] [Q]²  \nWhat is the initial concentration of Q in experiment 2?",
+    "question": "The results of an investigation of the reaction between P and Q are shown in this table.  \n| Experiment | Initial [P] / mol dm^-3^ | Initial [Q] / mol dm^-3^ | Initial rate / mol dm^-3^ s⁻¹|  \n|------------|------------------------|------------------------|----------------------------|  \n|1 | 0.200 | 0.500 | 0.400  \n|2 | 0.600 | To be calculated | 0.800 |  \n  \nThe rate equation is: rate = $k [P] [Q]^2$  \nWhat is the initial concentration of Q in experiment 2?",
     "options": [
       "0.167",
       "0.333",
@@ -156,7 +156,7 @@
     "id": "Chem319-7aav"
   },
   {
-    "question": "A cell with EMF = +2.15 V is made from two electrodes.  \nThe half-equations for the two electrodes are shown.  \nPositive electrode:  \nPbO₂(s) + 3 H⁺(aq) + HSO₄⁻(aq) + 2 e⁻ ⟶ PbSO₄(s) + 2 H₂O(l)  \nNegative electrode:  \nPbSO₄(s) + H⁺(aq) + 2 e⁻ ⟶ Pb(s) + HSO₄⁻(aq)  E⁰ = –0.46 V  \nWhat is the standard electrode potential of the PbO₂ / PbSO₄ electrode?",
+    "question": "A cell with EMF = +2.15 V is made from two electrodes.  \nThe half-equations for the two electrodes are shown.  \nPositive electrode:  \n\nPbO~2~(s) + 3 H^+^(aq) + HSO~4~^-^(aq) + 2 e^-^ &rarr; PbSO~4~(s) + 2 H~2~O(l)  \n\nNegative electrode:  \n\nPbSO~4~(s) + H^+^(aq) + 2 e^-^ &rarr; Pb(s) + HSO₄^-^(aq)  E&deg; = –0.46 V  \n\nWhat is the standard electrode potential of the PbO~2~ / PbSO~4~ electrode?",
     "options": [
       "–2.61 V",
       "–1.69 V",
@@ -168,7 +168,7 @@
     "id": "Chem3111-3ja2"
   },
   {
-    "question": "The equation for the complete combustion of butane is:  \nC₄H₁₀ + 6.5 O₂ → 4 CO₂ + 5 H₂O  \nWhat is the mole fraction of butane in a mixture of butane and oxygen with the minimum amount of oxygen needed for complete combustion?",
+    "question": "The equation for the complete combustion of butane is:  \n\nC₄H₁₀ + 6.5 O~2~ &rarr; 4 CO~2~ + 5 H~2~O\n\nWhat is the mole fraction of butane in a mixture of butane and oxygen with the minimum amount of oxygen needed for complete combustion?",
     "options": [
       "0.133",
       "0.153",

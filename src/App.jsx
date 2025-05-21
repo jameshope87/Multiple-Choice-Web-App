@@ -1,9 +1,15 @@
-import { useState, useEffect, Fragment, Children } from 'react';
+import React, { useState, useEffect, Children } from 'react';
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import supersub from "remark-supersub";
+
+// Import KaTeX styles
+import 'katex/dist/katex.min.css';
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import './App.css'
@@ -18,34 +24,32 @@ function shuffleArray(array) {
 }
 
 const MarkdownComponents = {
+  /*
+  p: ({children}) => {
+    return <p>{children}</p>
+  */
+  
   p: ({ children}) => {
     const childrenArray = Children.toArray(children);
     const text = childrenArray
       .map((child) => (typeof child === "string" ? child : ""))
       .join("")
       .trim();
-    const lines = text.split("\n");
-
+    //const lines = text.split("\n");
+    const isEquation = /[→⇌]/.test(text);
     return (
-      <>
-      {lines.map((line, index) => {
-        const isEquation = /[→↔⇌Δ⟶]/.test(line.trim()); // looks for symbols common in chemical equations
-        return (
-          <p
-            key={index}
-            className= {
-              isEquation 
-              ? "whitespace-nowrap overflow-x-auto text-sm font-mono" 
-              : ""
-            }
-          >
-            {line}
-          </p>
-        );
-      })}
-      </>
+      <p
+        className={
+          isEquation
+          ? "whitespace-nowrap overflow-x-auto text-sm font-equation" 
+          : ""
+        }
+      >
+        {childrenArray}
+      </p>
     );
-  },
+
+    },
 };
 
 function App() {
@@ -109,39 +113,15 @@ function App() {
     <div className="min-h-screen bg-gray-100 p-4 flex flex-col items-center justify-center dark:bg-gray-400">
       <div className="bg-white p-6 rounded-xl shadow-lg w-full max-w-xl dark:bg-gray-600">
         <h2 className="text-xl font-bold mb-4 text-left">
-          <div className="prose prose-sm max-w-none">
+          <div className="prose prose-sm max-w-none dark:text-gray-200">
           <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeRaw]}
+            remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath, supersub]}
+            rehypePlugins={[rehypeRaw, rehypeKatex]}
             components={MarkdownComponents}
           >
             {currentQuestion.question}
           </ReactMarkdown>
           </div>
-          {//Live rendering of Questions
-          /*
-          {currentQuestion.question.split('\n').map((line,i) => {
-            const isEquation = line.includes('->') || line.includes('+') || line.includes('Δ');
-            return (
-            <div
-              key={i}
-              className={`${
-                isEquation
-                  ? "whitespace-nowrap text-base md:text-lg overflow-auto"
-                  : "whitespace-normal"
-              }
-              ${
-                isTable
-                ? "font-mono text-sm"
-                : ""
-              }`}
-            >
-              {line}
-              <br />
-            </div>
-            );
-         })}
-         */}
         </h2>
         <div className="space-y-2">
           {currentQuestion.options.map((option) => (
@@ -152,11 +132,29 @@ function App() {
               }}
               disabled={showResult}
               className={`block w-full text-left px-4 py-2 rounded-lg border transition
-                ${selected === option ? "bg-blue-200" : "bg-gray-50 hover:bg-gray-100"}
+                ${selected === option ? "bg-blue-200 dark:bg-blue-600" : "bg-gray-50 hover:bg-gray-100 dark:hover:bg-gray-400"}
                 ${showResult ? "opacity-50 cursor-not-allowed" : ""}
                 dark:bg-gray-800`}
             >
-              {option}
+              <ReactMarkdown
+                remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath, supersub]}
+                rehypePlugins={[rehypeRaw, rehypeKatex]}
+                components={{
+                  p: ({ children }) => {
+                  const isEquation = /[→⇌]/.test(children);
+                  return (
+                  <span
+                  className={
+                    isEquation
+                      ? "whitespace-nowrap overflow-x-auto text-sm font-equation" 
+                      : ""
+                  }>{children}</span>
+                  );
+                }
+              }}
+              >
+                {option}
+              </ReactMarkdown>
             </button>
           ))}
         </div>
@@ -176,7 +174,13 @@ function App() {
               <p className="text-green-600 font-bold">Correct!</p>
             ) : (
               <p className="text-red-600 font-bold">
-                Incorrect. The correct answer is {currentQuestion.correctAnswer}.
+                Incorrect. The correct answer is 
+                <ReactMarkdown
+                  remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkMath, supersub]}
+                  rehypePlugins={[rehypeRaw, rehypeKatex]}
+                >
+                  {currentQuestion.correctAnswer}
+                </ReactMarkdown>
               </p>
             )}
             {currentIndex === questions.length - 1 ? (

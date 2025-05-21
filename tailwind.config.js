@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      equation: ["Bitter", "serif"],
+    },
     extend: {},
   },
   //darkMode: 'class', // Enable dark mode via class
