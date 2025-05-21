@@ -1,3 +1,5 @@
 # Multiple Choice Quizzing App
 
-This website serves as an initial attempt at building a multiple choice app for quizzing intended for use with A Level sciences
+This is a web application that serves multiple choice questions to the user.
+
+The appliction is built in react and hosted using Firebase (https://snappyscience-1f125.web.app/)
